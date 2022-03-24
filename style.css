@@ -1,0 +1,151 @@
+
+* {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179,62%,63%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --weight-1: 400;
+    --weight-2: 700;
+}
+
+body {
+  background-color: var(--Light-Gray);
+  justify-content: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+  color: var(--Light-Gray);
+}
+/*Layout*/
+section {
+  max-width: 1440px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  box-shadow: 0px 5px 10px 10px rgb(0,0,0,.5);
+  margin: auto;
+  border-radius: 1%;
+  overflow: hidden;
+  
+} 
+
+section > .row {
+  flex: 1;
+  
+}
+.row {
+  display: flex;
+  
+}
+
+.header {
+  width: auto;
+  height: auto; 
+  
+}
+.left {
+  width: 50%;
+  background-color: var(--cyan);
+  justify-content: center;
+  padding: 5%;
+  
+}
+.right {
+  width: 50%;
+  background-color: var(--light-cyan);
+  padding: 5%;
+}
+
+
+/* Header */
+.header-title {
+  color: var(--cyan);
+  font-weight: var(--weight-2);
+  font-size: 1.5rem;
+  margin: 2%;
+  
+}
+.header-brief {
+  color: var(--bright-yellow);
+  margin: 2%;
+}
+.offer-brief {
+  color: var(--Grayish-Blue);
+  margin: 2%;
+}
+
+.sub-title {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.price {
+  color: #fff;
+  font-weight: var(--weight-1);
+  font-size: 2rem;
+  
+}
+.price-details {
+  opacity: 0.7;
+  margin-bottom: 5%;
+}
+.price-brief {
+  color: #fff;
+  margin-bottom: 5%;
+}
+.why {
+  font-size: 1.25rem;
+  color: #fff;  
+}
+.why-info {
+  opacity: 0.7;
+  padding: 2%;}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  width: 70%;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5%;
+  color: #fff;
+  align-content: center;
+}
+button:hover {
+  transform: scale(1.125);
+  color: var(--cyan);
+  font-weight: var(--weight-2);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px;) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .row {
+    flex-direction: column;
+  }
+  
+  .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
